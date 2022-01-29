@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "124456223012",
+    "firebase_url": "https://hireplane-c49ba.firebaseio.com",
+    "project_id": "hireplane-c49ba",
+    "storage_bucket": "hireplane-c49ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124456223012:android:8063e9b431b76956a1b3b1",
+        "android_client_info": {
+          "package_name": "com.devbramm.hireplane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124456223012-hn4q4onqecd231mhf53jir9bckdpc8nc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devbramm.hireplane",
+            "certificate_hash": "062819dce52883e1660097d7e6851b3c8cbc7565"
+          }
+        },
+        {
+          "client_id": "124456223012-h400s3f9gq33dnrhjf2bcmhtemvk06v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCefmCJFC7sfGJx_aZb410VKXgANYME-wU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124456223012-h400s3f9gq33dnrhjf2bcmhtemvk06v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

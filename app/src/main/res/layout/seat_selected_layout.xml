@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/seat_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pro Economy"
+        android:textColor="@color/colorInactiveGrey"
+        app:layout_constraintEnd_toEndOf="@+id/imageView53"
+        app:layout_constraintStart_toStartOf="@+id/imageView49"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView49"
+        app:layout_constraintTop_toBottomOf="@+id/seat_class" />
+
+    <TextView
+        android:id="@+id/seat_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A025"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView53"
+        app:layout_constraintTop_toBottomOf="@+id/seat_class" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        app:srcCompat="@drawable/ic_wifi_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView51"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView53"
+        app:layout_constraintStart_toEndOf="@+id/imageView49"
+        app:layout_constraintTop_toBottomOf="@+id/seat_number"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView53"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat_number"
+        app:srcCompat="@drawable/ic_room_service_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

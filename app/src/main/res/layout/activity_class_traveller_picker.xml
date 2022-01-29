@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVeryLightBlue"
+    tools:context=".ClassTravellerPickerActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/close_classTraveller_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Class and Traveler Details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/close_classTraveller_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/close_classTraveller_btn" />
+
+    <Button
+        android:id="@+id/economy_class_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_stroke_back"
+        android:inputType="textCapSentences"
+        android:text="Economy"
+        android:textColor="@color/colorInactiveGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <Button
+        android:id="@+id/pro_economy_class_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_stroke_back"
+        android:inputType="textCapSentences"
+        android:text="Pro Economy"
+        android:textColor="@color/colorInactiveGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/economy_class_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/economy_class_btn" />
+
+    <Button
+        android:id="@+id/first_class_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_stroke_back"
+        android:inputType="textCapSentences"
+        android:text="First Class"
+        android:textColor="@color/colorInactiveGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/business_class_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/business_class_btn" />
+
+    <Button
+        android:id="@+id/business_class_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_stroke_back"
+        android:inputType="textCapSentences"
+        android:text="Business"
+        android:textColor="@color/colorInactiveGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/economy_class_btn" />
+
+    <ImageView
+        android:id="@+id/adult_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintEnd_toEndOf="@+id/first_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/business_class_btn"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageView
+        android:id="@+id/adult_remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintStart_toStartOf="@+id/business_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/business_class_btn"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/adult_counter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/adult_remove_btn"
+        app:layout_constraintEnd_toStartOf="@+id/adult_add_btn"
+        app:layout_constraintStart_toEndOf="@+id/adult_remove_btn"
+        app:layout_constraintTop_toTopOf="@+id/adult_remove_btn" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adults 18 - 64"
+        app:layout_constraintEnd_toEndOf="@+id/adult_counter_txt"
+        app:layout_constraintStart_toStartOf="@+id/adult_counter_txt"
+        app:layout_constraintTop_toBottomOf="@+id/adult_counter_txt" />
+
+    <ImageView
+        android:id="@+id/senior_remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintStart_toStartOf="@+id/business_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/adult_remove_btn"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/senior_counter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/senior_remove_btn"
+        app:layout_constraintEnd_toStartOf="@+id/adult_add_btn"
+        app:layout_constraintStart_toEndOf="@+id/adult_remove_btn"
+        app:layout_constraintTop_toTopOf="@+id/senior_remove_btn" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senior 65+"
+        app:layout_constraintEnd_toEndOf="@+id/senior_counter_txt"
+        app:layout_constraintStart_toStartOf="@+id/senior_counter_txt"
+        app:layout_constraintTop_toBottomOf="@+id/senior_counter_txt" />
+
+    <ImageView
+        android:id="@+id/senior_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintBottom_toBottomOf="@+id/senior_remove_btn"
+        app:layout_constraintEnd_toEndOf="@+id/first_class_btn"
+        app:layout_constraintTop_toTopOf="@+id/senior_remove_btn"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageView
+        android:id="@+id/infant_remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintStart_toStartOf="@+id/business_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/child_remove_btn"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/teen_counter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teen_remove_btn"
+        app:layout_constraintEnd_toStartOf="@+id/adult_add_btn"
+        app:layout_constraintStart_toEndOf="@+id/adult_remove_btn"
+        app:layout_constraintTop_toTopOf="@+id/teen_remove_btn" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teen 13 - 18"
+        app:layout_constraintEnd_toEndOf="@+id/teen_counter_txt"
+        app:layout_constraintStart_toStartOf="@+id/teen_counter_txt"
+        app:layout_constraintTop_toBottomOf="@+id/teen_counter_txt" />
+
+    <ImageView
+        android:id="@+id/teen_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintBottom_toBottomOf="@+id/teen_remove_btn"
+        app:layout_constraintEnd_toEndOf="@+id/first_class_btn"
+        app:layout_constraintTop_toTopOf="@+id/teen_remove_btn"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageView
+        android:id="@+id/child_remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintStart_toStartOf="@+id/business_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/teen_remove_btn"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/child_counter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/child_remove_btn"
+        app:layout_constraintEnd_toStartOf="@+id/adult_add_btn"
+        app:layout_constraintStart_toEndOf="@+id/adult_remove_btn"
+        app:layout_constraintTop_toTopOf="@+id/child_remove_btn" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child 2 - 11"
+        app:layout_constraintEnd_toEndOf="@+id/child_counter_txt"
+        app:layout_constraintStart_toStartOf="@+id/child_counter_txt"
+        app:layout_constraintTop_toBottomOf="@+id/child_counter_txt" />
+
+    <ImageView
+        android:id="@+id/child_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintBottom_toBottomOf="@+id/child_remove_btn"
+        app:layout_constraintEnd_toEndOf="@+id/first_class_btn"
+        app:layout_constraintTop_toTopOf="@+id/child_remove_btn"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageView
+        android:id="@+id/teen_remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintStart_toStartOf="@+id/business_class_btn"
+        app:layout_constraintTop_toBottomOf="@+id/senior_remove_btn"
+        app:srcCompat="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/infant_counter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/infant_remove_btn"
+        app:layout_constraintEnd_toStartOf="@+id/adult_add_btn"
+        app:layout_constraintStart_toEndOf="@+id/adult_remove_btn"
+        app:layout_constraintTop_toTopOf="@+id/infant_remove_btn" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infant Under 2"
+        app:layout_constraintEnd_toEndOf="@+id/infant_counter_txt"
+        app:layout_constraintStart_toStartOf="@+id/infant_counter_txt"
+        app:layout_constraintTop_toBottomOf="@+id/infant_counter_txt" />
+
+    <ImageView
+        android:id="@+id/infant_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_stroke_background"
+        app:layout_constraintBottom_toBottomOf="@+id/infant_remove_btn"
+        app:layout_constraintEnd_toEndOf="@+id/first_class_btn"
+        app:layout_constraintTop_toTopOf="@+id/infant_remove_btn"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/class_traveller_confirm_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/infant_add_btn"
+        app:layout_constraintStart_toStartOf="@+id/infant_remove_btn">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/imageView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_check_black_24dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVeryLightBlue"
+    tools:context=".TicketStatusActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="409dp"
+        android:layout_height="256dp"
+        android:background="@drawable/ticket_status_bakc_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket Status"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView45" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView15"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_seat_ticket">
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kenyaairways" />
+
+            <TextView
+                android:id="@+id/textView129"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Kenya Airways"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_ticket_seat">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/dotted_line_straight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="6 Jun, Monday 2019"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Outbound"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView131"
+                app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="Flight: KQ-23"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView132" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="NBO"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+            <TextView
+                android:id="@+id/textView144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BF5457G"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView142"
+                app:layout_constraintTop_toBottomOf="@+id/textView142" />
+
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView146"
+                app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+            <TextView
+                android:id="@+id/textView149"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView147"
+                app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+            <TextView
+                android:id="@+id/textView145"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BF5457G"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView143"
+                app:layout_constraintTop_toBottomOf="@+id/textView143" />
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="05:10"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView136"
+                app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+            <TextView
+                android:id="@+id/textView140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="10:00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView137"
+                app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/dotted_line_straight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DAC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView133"
+                app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nairobi"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintStart_toStartOf="@+id/textView134"
+                app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Reference"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintStart_toStartOf="@+id/textView139"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+            <TextView
+                android:id="@+id/textView146"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Terminal"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintStart_toStartOf="@+id/textView144"
+                app:layout_constraintTop_toBottomOf="@+id/textView144" />
+
+            <TextView
+                android:id="@+id/textView147"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gate"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintEnd_toEndOf="@+id/textView145"
+                app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="e-Ticket"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintEnd_toEndOf="@+id/textView140"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+            <TextView
+                android:id="@+id/textView138"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Stop, 20m"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintBottom_toBottomOf="@+id/textView136"
+                app:layout_constraintEnd_toEndOf="@+id/textView135"
+                app:layout_constraintStart_toStartOf="@+id/textView134"
+                app:layout_constraintTop_toTopOf="@+id/textView134" />
+
+            <TextView
+                android:id="@+id/textView141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6h 10m"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintBottom_toBottomOf="@+id/textView139"
+                app:layout_constraintEnd_toEndOf="@+id/textView140"
+                app:layout_constraintStart_toStartOf="@+id/textView139"
+                app:layout_constraintTop_toTopOf="@+id/textView139" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintEnd_toEndOf="@+id/textView135"
+                app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout9"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/dotted_line_straight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView148" />
+
+            <TextView
+                android:id="@+id/textView150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="6 Jun, Monday 2019"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+
+            <TextView
+                android:id="@+id/textView151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Inbound"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView150"
+                app:layout_constraintTop_toBottomOf="@+id/textView150" />
+
+            <TextView
+                android:id="@+id/textView152"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="Flight: KQ-23"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView151" />
+
+            <TextView
+                android:id="@+id/textView153"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DAC"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView151"
+                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+            <TextView
+                android:id="@+id/textView156"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintStart_toStartOf="@+id/textView153"
+                app:layout_constraintTop_toBottomOf="@+id/textView153" />
+
+            <TextView
+                android:id="@+id/textView154"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="NBO"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView152"
+                app:layout_constraintTop_toBottomOf="@+id/textView152" />
+
+            <TextView
+                android:id="@+id/textView155"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Stop, 20m"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintBottom_toBottomOf="@+id/textView153"
+                app:layout_constraintEnd_toEndOf="@+id/textView135"
+                app:layout_constraintStart_toStartOf="@+id/textView134"
+                app:layout_constraintTop_toTopOf="@+id/textView153" />
+
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nairobi"
+                android:textColor="@color/colorInactiveGrey"
+                app:layout_constraintEnd_toEndOf="@+id/textView154"
+                app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="05:10"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView136"
+                app:layout_constraintTop_toBottomOf="@+id/textView156" />
+
+            <TextView
+                android:id="@+id/textView159"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:16"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView157"
+                app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/choose_seats_btn"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_back_dark_blue"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Choose Seat"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
